@@ -15,9 +15,25 @@ body {
   justify-content: space-around;
 }
 
+/* .background {
+  background-image: url("Roshambo.png");
+  background-color: #cccccc;
+  background-size: 200vh;
+  height: 100%;
+  width: auto;
+} */
+
+.title {
+  font-size: 5rem;
+}
+
 main {
   display: flex;
   justify-content: space-around;
+}
+
+.player {
+  font-size: 3rem;
 }
 
 ul {
@@ -28,7 +44,7 @@ ul {
 
 .buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -37,6 +53,23 @@ ul {
 }
 
 button {
+  max-height: 150px;
+  max-width: 200px;
+  width: 120px;
+  height: 122px;
+  font-size: 2rem;
+  margin: 10px;
+  padding: 0px;
+}
+
+#icon {
+  max-height: 150px;
+  max-width: 200px;
+  width: 120px;
+  height: 120px;
+}
+
+footer {
   margin: 0;
   padding: 0;
 }
