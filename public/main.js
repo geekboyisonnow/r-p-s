@@ -9,10 +9,18 @@ const playerOneClickedRock = () => {
   playerOneChoice = 'rock'
   theWinner()
 
-  // //find the section with the class player-one
+  //find the section with the class player-one
   // let playerOne = document.querySelector('.player-one')
-  // //add the class name 'hidden' so it goes away
-  // playerOne.classList.toggle('hidden')
+  let playerOne = document.querySelector('.player-one .buttons')
+  //add the class name 'hidden' so it goes away
+  playerOne.classList.toggle('hidden')
+  playerOne.replaceChild(playerOneChoice, document.querySelector('.player-one .player'))
+
+  //   document.getElementById("okButton")
+  //         .addEventListener("click", function() {
+  //   document.getElementById("welcome").hidden = true;
+  //   document.getElementById("awesome").hidden = false;
+  // }, false);
 }
 
 const playerOneClickedPaper = () => {
@@ -22,10 +30,12 @@ const playerOneClickedPaper = () => {
   playerOneChoice = 'paper'
   theWinner()
 
-  // //find the section with the class player-one
+  //find the section with the class player-one
   // let playerOne = document.querySelector('.player-one')
-  // //add the class name 'hidden' so it goes away
-  // playerOne.classList.toggle('hidden')
+  let playerOne = document.querySelector('.player-one .buttons')
+  //add the class name 'hidden' so it goes away
+  playerOne.classList.toggle('hidden')
+  playerOne.replaceChild(playerOneChoice, document.querySelector('.player-one .player'))
 }
 
 const playerOneClickedScissors = () => {
@@ -35,10 +45,12 @@ const playerOneClickedScissors = () => {
   playerOneChoice = 'scissors'
   theWinner()
 
-  // //find the section with the class player-one
+  //find the section with the class player-one
   // let playerOne = document.querySelector('.player-one')
-  // //add the class name 'hidden' so it goes away
-  // playerOne.classList.toggle('hidden')
+  let playerOne = document.querySelector('.player-one .buttons')
+  //add the class name 'hidden' so it goes away
+  playerOne.classList.toggle('hidden')
+  playerOne.replaceChild(playerOneChoice, document.querySelector('.player-one .player'))
 }
 
 const playerTwoClickedRock = () => {
@@ -48,10 +60,12 @@ const playerTwoClickedRock = () => {
   playerTwoChoice = 'rock'
   theWinner()
 
-  // //find the section with the class player-two
+  //find the section with the class player-two
   // let playerTwo = document.querySelector('.player-two')
-  // //add the class name 'hidden' so it goes away
-  // playerTwo.classList.toggle('hidden')
+  let playerTwo = document.querySelector('.player-two .buttons')
+  //add the class name 'hidden' so it goes away
+  playerTwo.classList.toggle('hidden')
+  playerTwo.replaceChild(playerTwoChoice, document.querySelector('.player-two .player'))
 }
 
 const playerTwoClickedPaper = () => {
@@ -61,10 +75,12 @@ const playerTwoClickedPaper = () => {
   playerTwoChoice = 'paper'
   theWinner()
 
-  // //find the section with the class player-two
+  //find the section with the class player-two
   // let playerTwo = document.querySelector('.player-two')
-  // //add the class name 'hidden' so it goes away
-  // playerTwo.classList.toggle('hidden')
+  let playerTwo = document.querySelector('.player-two .buttons')
+  //add the class name 'hidden' so it goes away
+  playerTwo.classList.toggle('hidden')
+  playerTwo.replaceChild(playerTwoChoice, document.querySelector('.player-two .player'))
 }
 
 const playerTwoClickedScissors = () => {
@@ -74,14 +90,16 @@ const playerTwoClickedScissors = () => {
   playerTwoChoice = 'scissors'
   theWinner()
 
-  // //find the section with the class player-two
+  //find the section with the class player-two
   // let playerTwo = document.querySelector('.player-two')
-  // //add the class name 'hidden' so it goes away
-  // playerTwo.classList.toggle('hidden')
+  let playerTwo = document.querySelector('.player-two .buttons')
+  //add the class name 'hidden' so it goes away
+  playerTwo.classList.toggle('hidden')
+  playerTwo.replaceChild(playerTwoChoice, document.querySelector('.player-two .player'))
 }
 
 const theWinner = () => {
-  let winner = 'Roshambo'
+  let winner = 'Roshambo!!!'
 
   if (playerOneChoice === 'rock' && playerTwoChoice === 'scissors' ||
     playerOneChoice === 'paper' && playerTwoChoice === 'rock' ||
